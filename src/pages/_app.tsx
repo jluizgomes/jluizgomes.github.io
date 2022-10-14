@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="keywords" content="Keywords" />
         <title>Jorge Gomes - Software Developer</title>
 
-        <link rel="manifest" href="/manifest.json" />
-        <link
+        {/* <link rel="manifest" href="/manifest.json" /> */}
+        {/* <link
           href="/icons/favicon-16x16.png"
           rel="icon"
           type="image/png"
@@ -32,7 +32,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link> */}
+        <link rel="shortcut icon" href="favicon.ico"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet" />
