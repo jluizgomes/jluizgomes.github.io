@@ -7,7 +7,7 @@ import {useMounted} from '~/helpers/hooks'
 const Contact: NextPage = () => {
   const isMounted = useMounted()
   return (
-    <MainContainer titlePage="Contact Page">
+    <MainContainer titlePage="Jorge Gomes - Contact me">
       {!isMounted ? (
         <div>Carregando...</div>
       ) : (
