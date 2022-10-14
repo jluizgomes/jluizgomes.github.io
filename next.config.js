@@ -5,7 +5,10 @@ const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: isProd ? '/portfolio/' : ''
+  assetPrefix: isProd ? '/jluizgomes.github.io/' : '',
+  images: {
+    unoptimized: true,
+  },
 }
 
 module.exports = nextConfig
