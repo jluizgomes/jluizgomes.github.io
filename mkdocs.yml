@@ -1,0 +1,79 @@
+site_name: Jorge's software developer portfolio
+site_url: https://jluizgomes.github.io/
+site_author: Jorge Luiz Gomes
+site_description: >-
+  I'am Jorge Luiz Gomes, Software developer and AI Developer, and you are here on my personal portfolio
+
+# Repository
+repo_name: github/jluizgomes
+repo_url: https://github.com/jluizgomes
+
+# Configuration
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github-alt
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: deep purple
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.top
+    - navigation.path
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    # - header.autohide
+
+# Additional configuration
+extra:
+  analytics:
+    provider: google
+    property: G-DGEPJFX3BW
+  generator: false
+
+# Navigation
+nav:
+  - Início: index.md
+  - Currículo: resume/
+  - Projetos: projects/
+  - Contato: contact/
+
+# Search
+plugins:
+  - search:                                         
+      lang: en 
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: pt
+          default: true
+          name: Português
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Início: Home
+            Currículo: Resume
+            Projetos: Projects
+            Contato: Contact
+          nav:
+            - Home: index.md
+            - Resume: en/resume/
+            - Projects: en/projects/
+            - Contact: en/contact/
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+copyright: Copyright &copy; 2024 Jorge Luiz Gomes
